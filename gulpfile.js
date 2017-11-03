@@ -3,8 +3,8 @@ var gulp = require('gulp')
 var watch = require('gulp-watch')
 var exec = require('child_process').exec
 var paths = {
-   scripts: './app/**/*.js',
-   tests: './test/**/*.js'
+   scripts: './app/**/*.{js,ts}',
+   tests: './test/**/*.{js,ts}'
 }
 gulp.task('test', function() {
    exec('npm t', function(err, stdout, stderr){

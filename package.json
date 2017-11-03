@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/nyc --reporter=html --reporter=text ./node_modules/.bin/mocha -c --require babel-register",
+    "test": "./node_modules/.bin/nyc --reporter=html --reporter=text ./node_modules/.bin/ts-mocha -c ./test/**/*.{js,ts}",
     "coverage": "cross-env nyc report --reporter=text-lcov | coveralls",
     "test-watch": "gulp test-watch"
   },
@@ -27,6 +27,8 @@
     "gulp": "^3.9.1",
     "gulp-watch": "^4.3.11",
     "mocha": "^4.0.1",
-    "nyc": "^11.3.0"
+    "nyc": "^11.3.0",
+    "ts-mocha": "^1.0.3",
+    "typescript": "^2.6.1"
   }
 }

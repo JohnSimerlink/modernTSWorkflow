@@ -1,0 +1,19 @@
+{
+  "name": "moderntsworkflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnSimerlink/modernTSWorkflow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnSimerlink/modernTSWorkflow/issues"
+  },
+  "homepage": "https://github.com/JohnSimerlink/modernTSWorkflow#readme"
+}

@@ -1,3 +1,4 @@
+require('babel-register')
 var chicken  = require('../app/joke').chicken
 var expect = require('chai').expect
 describe("Chicken", function() {

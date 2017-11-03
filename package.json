@@ -30,5 +30,16 @@
     "nyc": "^11.3.0",
     "ts-mocha": "^1.0.3",
     "typescript": "^2.6.1"
+  },
+  "nyc": {
+    "require": [
+      "babel-register"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "sourceMap": false,
+    "instrument": false
   }
 }

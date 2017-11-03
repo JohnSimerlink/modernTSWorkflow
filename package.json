@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/nyc --reporter=html --reporter=text ./node_modules/.bin/ts-mocha -c ./test/**/*.{js,ts}",
-    "coverage": "cross-env nyc report --reporter=text-lcov | coveralls",
+    "coverage": "cross-env NODE_ENV=test nyc npm t",
+    "test": "cross-env NODE_ENV=test ./node_modules/.bin/ts-mocha -c --recursive --bail ./test/**/*.{ts,js}",
     "test-watch": "gulp test-watch"
   },
   "repository": {
@@ -26,6 +26,7 @@
     "coveralls": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-watch": "^4.3.11",
+    "istanbul": "^0.4.5",
     "mocha": "^4.0.1",
     "nyc": "^11.3.0",
     "ts-mocha": "^1.0.3",

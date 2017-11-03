@@ -1,4 +1,3 @@
-require('babel-register')
 import {chicken} from "../app/joke"
 import {expect} from "chai"
 describe("Chicken", function() {

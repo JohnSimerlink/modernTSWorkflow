@@ -5,7 +5,8 @@
     "sourceMap": true,
     "strict": false,
     "alwaysStrict": false,
-    "noImplicitUseStrict": true
+    "noImplicitUseStrict": true,
+    "types": ["mocha", "node"]
   },
   "exclude": [
     "node_modules"
